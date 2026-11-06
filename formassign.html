@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input valildation</title>
+    <link rel="stylesheet" href="formassign.css">
+</head>
+<body>
+
+     
+    <div class="container">
+
+       
+        <h2>
+            Contact Form 
+        </h2>
+
+        <form id="formlogin">
+
+             <div class="input-group">
+                <p>Full Name</p>
+                <input type="text" id="name" placeholder="Douglas Bassey">
+                <div class="error" id="nameError"></div>
+            </div>
+
+            <div class="input-group">
+                <p>Email address</p>
+                <input type="email" id="email" placeholder="douglas@gmail.com">
+                <div class="error" id="emailError"></div>
+            </div>
+
+            <div> 
+                <p>Age</p>
+                <input type="number" id="age" placeholder="18+">
+                <div class="error" id="ageError"></div>
+            </div>
+
+            <div class="input-group">
+                <p>Password</p>
+                <input type="password" id="password" placeholder="*****">
+
+                <button type="button" class="toggle-btn" data-target="password">
+                    show
+                </button>
+
+                <div class="strength" id="strengthBar"></div>
+
+                <div class="error" id="passwordError"></div>
+            </div>
+
+
+            <!-- register button -->
+             <br>
+             <div class="login">
+                <button type="submit" class="submit-btn">Sign Up</button>
+             </div>
+
+        </form>
+        
+
+    </div>
+
+    
+
+    <script src="formassign.js"></script>
+</body>
+</html>
